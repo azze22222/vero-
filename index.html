@@ -50,6 +50,7 @@ main{padding:40px}
 /* FILTER */
 .filter{
   display:flex;
+  flex-wrap:wrap;
   gap:15px;
   margin-bottom:30px;
 }
@@ -57,6 +58,8 @@ main{padding:40px}
   padding:10px;
   border-radius:5px;
   border:none;
+  background:#222;
+  color:#fff;
 }
 
 /* PRODUCTS */
@@ -76,6 +79,7 @@ main{padding:40px}
   width:100%;
   height:200px;
   object-fit:cover;
+  background:#333;
 }
 .card-content{
   padding:15px;
@@ -113,6 +117,8 @@ main{padding:40px}
   margin-bottom:15px;
   border-radius:5px;
   border:none;
+  background:#222;
+  color:#fff;
 }
 .contact button{
   padding:12px 25px;
@@ -188,7 +194,9 @@ footer{
 
 <section class="products" id="products">
   <div class="card" data-type="Cuir" data-price="45">
-    <img src="https://images.unsplash.com/photo-1612831455544-0d1a7e2454be?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1612831455544-0d1a7e2454be?auto=format&fit=crop&w=800&q=80" 
+         alt="Bracelet Cuir Classique"
+         onerror="this.onerror=null;this.src='https://via.placeholder.com/400x200?text=Image+Indisponible';">
     <div class="card-content">
       <h3>Bracelet Cuir Classique</h3>
       <p>Couleur : Marron</p>
@@ -198,7 +206,9 @@ footer{
   </div>
 
   <div class="card" data-type="Métal" data-price="120">
-    <img src="https://images.unsplash.com/photo-1590094890266-4b1a6c0b4e1f?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1590094890266-4b1a6c0b4e1f?auto=format&fit=crop&w=800&q=80" 
+         alt="Bracelet Acier Inox"
+         onerror="this.onerror=null;this.src='https://via.placeholder.com/400x200?text=Image+Indisponible';">
     <div class="card-content">
       <h3>Bracelet Acier Inox</h3>
       <p>Couleur : Argent</p>
@@ -208,7 +218,9 @@ footer{
   </div>
 
   <div class="card" data-type="Perles" data-price="80">
-    <img src="https://images.unsplash.com/photo-1581092795369-1f8e0f9bfb2d?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1581092795369-1f8e0f9bfb2d?auto=format&fit=crop&w=800&q=80" 
+         alt="Bracelet Perles Naturelles"
+         onerror="this.onerror=null;this.src='https://via.placeholder.com/400x200?text=Image+Indisponible';">
     <div class="card-content">
       <h3>Bracelet Perles Naturelles</h3>
       <p>Couleur : Multicolore</p>
@@ -216,6 +228,8 @@ footer{
       <button>Détails</button>
     </div>
   </div>
+
+  <!-- Ajouter plus de bracelets ici -->
 </section>
 
 <section class="contact" id="contact">
