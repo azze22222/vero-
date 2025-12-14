@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Pro</title>
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/833/833472.png">
-<meta name="description" content="Site professionnel et moderne">
+<title>Galaxy Explorer</title>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/414/414927.png">
+<meta name="description" content="Explorez les merveilles de l'univers et des galaxies">
 <meta name="author" content="Med Hedi Amine Jendoubi">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#111;color:#eee;line-height:1.6}
+body{background:#0a0a0a;color:#eee;line-height:1.6}
 
 /* HEADER */
 header{
@@ -28,11 +28,11 @@ nav a{
   margin-left:20px;
   font-size:16px;
 }
-nav a:hover{color:#00aaff}
+nav a:hover{color:#00f0ff}
 
 /* BANNER */
 .banner{
-  background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80")
+  background:url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80")
   center/cover no-repeat;
   height:400px;
   display:flex;
@@ -47,11 +47,11 @@ nav a:hover{color:#00aaff}
 /* MAIN */
 main{padding:40px}
 
-/* SECTION ABOUT */
+/* ABOUT */
 .about{
   margin-bottom:50px;
 }
-.about h2{margin-bottom:20px;color:#00aaff}
+.about h2{margin-bottom:20px;color:#00f0ff}
 .about p{font-size:16px}
 
 /* GALLERY */
@@ -70,19 +70,18 @@ main{padding:40px}
 }
 .gallery img:hover{transform:scale(1.05)}
 
-/* PROJECTS */
-.projects{
+/* FACTS */
+.facts{
   margin-bottom:50px;
 }
-.projects h2{margin-bottom:20px;color:#00aaff}
-.project-card{
-  background:#1a1a1a;
-  padding:15px;
-  border-radius:10px;
-  margin-bottom:20px;
+.facts h2{margin-bottom:20px;color:#00f0ff}
+.facts ul{list-style:none;}
+.facts li{
+  background:#111;
+  padding:10px;
+  margin-bottom:10px;
+  border-radius:8px;
 }
-.project-card h3{margin-bottom:10px}
-.project-card p{font-size:14px}
 
 /* CONTACT */
 .contact{
@@ -91,7 +90,7 @@ main{padding:40px}
   padding:40px;
   border-radius:12px;
 }
-.contact h2{margin-bottom:20px;color:#00aaff}
+.contact h2{margin-bottom:20px;color:#00f0ff}
 .contact input,.contact textarea{
   width:100%;
   padding:10px;
@@ -103,7 +102,7 @@ main{padding:40px}
 }
 .contact button{
   padding:12px 25px;
-  background:#00aaff;
+  background:#00f0ff;
   border:none;
   color:white;
   border-radius:5px;
@@ -144,47 +143,44 @@ footer{
 <body>
 
 <header>
-  <h1>Portfolio Pro</h1>
+  <h1>Galaxy Explorer</h1>
   <nav>
     <a href="#about">À propos</a>
     <a href="#gallery">Galerie</a>
-    <a href="#projects">Projets</a>
+    <a href="#facts">Faits</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <div class="banner">
-  Bienvenue sur mon Portfolio
+  Explorez l'Univers
 </div>
 
 <main>
 
 <section class="about" id="about">
-  <h2>À propos</h2>
-  <p>Bienvenue sur mon site professionnel. Je crée des projets modernes, interactifs et design. Ici, vous pouvez découvrir mon travail, mes projets récents et me contacter facilement.</p>
+  <h2>À propos des galaxies</h2>
+  <p>Découvrez la beauté infinie de l'univers. Des galaxies lointaines aux étoiles brillantes, chaque coin de l'espace cache des mystères fascinants. Explorez, apprenez et émerveillez-vous devant l'immensité cosmique.</p>
 </section>
 
 <section class="gallery" id="gallery">
-  <h2>Galerie</h2>
-  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80" alt="Image 1" onerror="this.src='https://via.placeholder.com/400x200?text=Image+Indisponible'">
-  <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Image 2" onerror="this.src='https://via.placeholder.com/400x200?text=Image+Indisponible'">
-  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=400&q=80" alt="Image 3" onerror="this.src='https://via.placeholder.com/400x200?text=Image+Indisponible'">
+  <h2>Galerie de l'espace</h2>
+  <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=80" alt="Galaxy 1" onerror="this.src='https://via.placeholder.com/400x200?text=Image+Indisponible'">
+  <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=400&q=80" alt="Galaxy 2" onerror="this.src='https://via.placeholder.com/400x200?text=Image+Indisponible'">
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Galaxy 3" onerror="this.src='https://via.placeholder.com/400x200?text=Image+Indisponible'">
 </section>
 
-<section class="projects" id="projects">
-  <h2>Projets</h2>
-  <div class="project-card">
-    <h3>Projet 1</h3>
-    <p>Description du projet 1 avec détails et technologies utilisées.</p>
-  </div>
-  <div class="project-card">
-    <h3>Projet 2</h3>
-    <p>Description du projet 2 avec détails et technologies utilisées.</p>
-  </div>
+<section class="facts" id="facts">
+  <h2>Faits fascinants</h2>
+  <ul>
+    <li>Notre galaxie, la Voie Lactée, contient environ 100 à 400 milliards d’étoiles.</li>
+    <li>Il existe plus de 2 000 galaxies visibles avec nos télescopes.</li>
+    <li>La lumière des galaxies les plus lointaines met des milliards d’années pour nous parvenir.</li>
+  </ul>
 </section>
 
 <section class="contact" id="contact">
-  <h2>Contactez-moi</h2>
+  <h2>Contactez-nous</h2>
   <input type="text" placeholder="Nom">
   <input type="email" placeholder="Email">
   <textarea placeholder="Votre message"></textarea>
@@ -194,7 +190,7 @@ footer{
 </main>
 
 <footer>
-  Créé par Med Hedi Amine Jendoubi © 2025 – Portfolio Pro
+  Créé par Med Hedi Amine Jendoubi © 2025 – Galaxy Explorer
 </footer>
 
 <div class="whatsapp" onclick="window.open('https://wa.me/33600000000')">📱</div>
